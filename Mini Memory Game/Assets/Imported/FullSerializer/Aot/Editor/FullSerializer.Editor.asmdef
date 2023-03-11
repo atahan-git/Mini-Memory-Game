@@ -1,0 +1,18 @@
+{
+    "name": "FullSerializer.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:5266a9fadb1c60548965e81d8ecf61c5"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

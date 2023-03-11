@@ -1,0 +1,392 @@
+{
+    "wordPackName": "Katakana",
+    "wordPackAffinity": "ice",
+    "wordPairs": [
+        {
+            "id": 0,
+            "word": "\u30a2\r",
+            "meaning": "a"
+        },
+        {
+            "id": 1,
+            "word": "\u30a4\r",
+            "meaning": "i"
+        },
+        {
+            "id": 2,
+            "word": "\u30a6\r",
+            "meaning": "u"
+        },
+        {
+            "id": 3,
+            "word": "\u30a8\r",
+            "meaning": "e"
+        },
+        {
+            "id": 4,
+            "word": "\u30aa\r",
+            "meaning": "o"
+        },
+        {
+            "id": 5,
+            "word": "\u30cf\r",
+            "meaning": "ha"
+        },
+        {
+            "id": 6,
+            "word": "\u30d2\r",
+            "meaning": "hi"
+        },
+        {
+            "id": 7,
+            "word": "\u30d5\r",
+            "meaning": "hu"
+        },
+        {
+            "id": 8,
+            "word": "\u30d8\r",
+            "meaning": "he"
+        },
+        {
+            "id": 9,
+            "word": "\u30db\r",
+            "meaning": "ho"
+        },
+        {
+            "id": 10,
+            "word": "\u30d0\r",
+            "meaning": "ba"
+        },
+        {
+            "id": 11,
+            "word": "\u30d3\r",
+            "meaning": "bi"
+        },
+        {
+            "id": 12,
+            "word": "\u30d6\r",
+            "meaning": "bu"
+        },
+        {
+            "id": 13,
+            "word": "\u30d9\r",
+            "meaning": "be"
+        },
+        {
+            "id": 14,
+            "word": "\u30dc\r",
+            "meaning": "bo"
+        },
+        {
+            "id": 15,
+            "word": "\u30d1\r",
+            "meaning": "pa"
+        },
+        {
+            "id": 16,
+            "word": "\u30d4\r",
+            "meaning": "pi"
+        },
+        {
+            "id": 17,
+            "word": "\u30d7\r",
+            "meaning": "pu"
+        },
+        {
+            "id": 18,
+            "word": "\u30da\r",
+            "meaning": "pe"
+        },
+        {
+            "id": 19,
+            "word": "\u30dd\r",
+            "meaning": "po"
+        },
+        {
+            "id": 20,
+            "word": "\u30ab\r",
+            "meaning": "ka"
+        },
+        {
+            "id": 21,
+            "word": "\u30ad\r",
+            "meaning": "ki"
+        },
+        {
+            "id": 22,
+            "word": "\u30af\r",
+            "meaning": "ku"
+        },
+        {
+            "id": 23,
+            "word": "\u30b1\r",
+            "meaning": "ke"
+        },
+        {
+            "id": 24,
+            "word": "\u30b3\r",
+            "meaning": "ko"
+        },
+        {
+            "id": 25,
+            "word": "\u30ac\r",
+            "meaning": "ga"
+        },
+        {
+            "id": 26,
+            "word": "\u30ae\r",
+            "meaning": "gi"
+        },
+        {
+            "id": 27,
+            "word": "\u30b0\r",
+            "meaning": "gu"
+        },
+        {
+            "id": 28,
+            "word": "\u30b2\r",
+            "meaning": "ge"
+        },
+        {
+            "id": 29,
+            "word": "\u30b4\r",
+            "meaning": "go"
+        },
+        {
+            "id": 30,
+            "word": "\u30bf\r",
+            "meaning": "ta"
+        },
+        {
+            "id": 31,
+            "word": "\u30c1\r",
+            "meaning": "chi"
+        },
+        {
+            "id": 32,
+            "word": "\u30c4\r",
+            "meaning": "tsu"
+        },
+        {
+            "id": 33,
+            "word": "\u30c6\r",
+            "meaning": "te"
+        },
+        {
+            "id": 34,
+            "word": "\u30c8\r",
+            "meaning": "to"
+        },
+        {
+            "id": 35,
+            "word": "\u30c0\r",
+            "meaning": "da"
+        },
+        {
+            "id": 36,
+            "word": "\u30c2\r",
+            "meaning": "di"
+        },
+        {
+            "id": 37,
+            "word": "\u30c5\r",
+            "meaning": "du"
+        },
+        {
+            "id": 38,
+            "word": "\u30c7\r",
+            "meaning": "de"
+        },
+        {
+            "id": 39,
+            "word": "\u30c9\r",
+            "meaning": "do"
+        },
+        {
+            "id": 40,
+            "word": "\u30b5\r",
+            "meaning": "sa"
+        },
+        {
+            "id": 41,
+            "word": "\u30b7\r",
+            "meaning": "shi"
+        },
+        {
+            "id": 42,
+            "word": "\u30b9\r",
+            "meaning": "su"
+        },
+        {
+            "id": 43,
+            "word": "\u30bb\r",
+            "meaning": "se"
+        },
+        {
+            "id": 44,
+            "word": "\u30bd\r",
+            "meaning": "so"
+        },
+        {
+            "id": 45,
+            "word": "\u30b6\r",
+            "meaning": "za"
+        },
+        {
+            "id": 46,
+            "word": "\u30b8\r",
+            "meaning": "zi"
+        },
+        {
+            "id": 47,
+            "word": "\u30ba\r",
+            "meaning": "zu"
+        },
+        {
+            "id": 48,
+            "word": "\u30bc\r",
+            "meaning": "ze"
+        },
+        {
+            "id": 49,
+            "word": "\u30be\r",
+            "meaning": "zo"
+        },
+        {
+            "id": 50,
+            "word": "\u30ca\r",
+            "meaning": "na"
+        },
+        {
+            "id": 51,
+            "word": "\u30cb\r",
+            "meaning": "ni"
+        },
+        {
+            "id": 52,
+            "word": "\u30cc\r",
+            "meaning": "nu"
+        },
+        {
+            "id": 53,
+            "word": "\u30cd\r",
+            "meaning": "ne"
+        },
+        {
+            "id": 54,
+            "word": "\u30ce\r",
+            "meaning": "no"
+        },
+        {
+            "id": 55,
+            "word": "\u30de\r",
+            "meaning": "ma"
+        },
+        {
+            "id": 56,
+            "word": "\u30df\r",
+            "meaning": "mi"
+        },
+        {
+            "id": 57,
+            "word": "\u30e0\r",
+            "meaning": "mu"
+        },
+        {
+            "id": 58,
+            "word": "\u30e1\r",
+            "meaning": "me"
+        },
+        {
+            "id": 59,
+            "word": "\u30e2\r",
+            "meaning": "mo"
+        },
+        {
+            "id": 60,
+            "word": "\u30e9\r",
+            "meaning": "ra"
+        },
+        {
+            "id": 61,
+            "word": "\u30ea\r",
+            "meaning": "ri"
+        },
+        {
+            "id": 62,
+            "word": "\u30eb\r",
+            "meaning": "ru"
+        },
+        {
+            "id": 63,
+            "word": "\u30ec\r",
+            "meaning": "re"
+        },
+        {
+            "id": 64,
+            "word": "\u30ed\r",
+            "meaning": "ro"
+        },
+        {
+            "id": 65,
+            "word": "\u30ef\r",
+            "meaning": "wa"
+        },
+        {
+            "id": 66,
+            "word": "\u30f0\r",
+            "meaning": "wi"
+        },
+        {
+            "id": 67,
+            "word": "\u30f2\r",
+            "meaning": "wo"
+        },
+        {
+            "id": 68,
+            "word": "\u30e4\r",
+            "meaning": "ya"
+        },
+        {
+            "id": 69,
+            "word": "\u30e6\r",
+            "meaning": "yu"
+        },
+        {
+            "id": 70,
+            "word": "\u30e8\r",
+            "meaning": "yo"
+        },
+        {
+            "id": 71,
+            "word": "\u30f3\r",
+            "meaning": "n"
+        },
+        {
+            "id": 72,
+            "word": "\u30f7\r",
+            "meaning": "va"
+        },
+        {
+            "id": 73,
+            "word": "\u30f8\r",
+            "meaning": "vi"
+        },
+        {
+            "id": 74,
+            "word": "\u30f4\r",
+            "meaning": "vu"
+        },
+        {
+            "id": 75,
+            "word": "\u30f9\r",
+            "meaning": "ve"
+        },
+        {
+            "id": 76,
+            "word": "\u30fa",
+            "meaning": "vo"
+        }
+    ],
+    "$type": "WordPack"
+}

@@ -1,0 +1,486 @@
+{
+    "wordPackName": "JPDB",
+    "wordPairs": [
+        {
+            "id": 0,
+            "word": "\u5fc3",
+            "meaning": "heart"
+        },
+        {
+            "id": 1,
+            "word": "\u4e00",
+            "meaning": "one"
+        },
+        {
+            "id": 2,
+            "word": "\u5341",
+            "meaning": "ten"
+        },
+        {
+            "id": 3,
+            "word": "\u571f",
+            "meaning": "earth"
+        },
+        {
+            "id": 4,
+            "word": "\u738b",
+            "meaning": "king"
+        },
+        {
+            "id": 5,
+            "word": "\u7532",
+            "meaning": "outer shell"
+        },
+        {
+            "id": 6,
+            "word": "\u4e8c",
+            "meaning": "two"
+        },
+        {
+            "id": 7,
+            "word": "\u91cc",
+            "meaning": "home village"
+        },
+        {
+            "id": 8,
+            "word": "\u7406",
+            "meaning": "logic"
+        },
+        {
+            "id": 9,
+            "word": "\u5b50",
+            "meaning": "child"
+        },
+        {
+            "id": 10,
+            "word": "\u5b66",
+            "meaning": "study"
+        },
+        {
+            "id": 11,
+            "word": "\u5fc3<pos=0em><sup>\u3057\u3093</sup><pos=1em>\u7406<pos=1em><sup>\u308a</sup><pos=2em>\u5b66<pos=2em><sup>\u304c\u304f</sup><pos=2em>",
+            "meaning": " psychology"
+        },
+        {
+            "id": 12,
+            "word": "\u4e01",
+            "meaning": "street"
+        },
+        {
+            "id": 13,
+            "word": "\u793a",
+            "meaning": "demonstrate"
+        },
+        {
+            "id": 14,
+            "word": "\u5b97",
+            "meaning": "religion"
+        },
+        {
+            "id": 15,
+            "word": "\u8002",
+            "meaning": "old grave"
+        },
+        {
+            "id": 16,
+            "word": "\u5b5d",
+            "meaning": "duty to one"
+        },
+        {
+            "id": 17,
+            "word": "\u4e42",
+            "meaning": "folding chair legs"
+        },
+        {
+            "id": 18,
+            "word": "\u6535",
+            "meaning": "folding chair"
+        },
+        {
+            "id": 19,
+            "word": "\u6559",
+            "meaning": "teach"
+        },
+        {
+            "id": 20,
+            "word": "\u5b97<pos=0em><sup>\u3057\u3085\u3046</sup><pos=1.5em>\u6559<pos=1.5em><sup>\u304d\u3087\u3046</sup><pos=2em>",
+            "meaning": " religion"
+        },
+        {
+            "id": 21,
+            "word": "\u6728",
+            "meaning": "tree"
+        },
+        {
+            "id": 22,
+            "word": "\u6797",
+            "meaning": "a bunch of trees"
+        },
+        {
+            "id": 23,
+            "word": "\u4e0a",
+            "meaning": "above"
+        },
+        {
+            "id": 24,
+            "word": "\u6b62",
+            "meaning": "stop"
+        },
+        {
+            "id": 25,
+            "word": "\u6b74",
+            "meaning": "chronicle"
+        },
+        {
+            "id": 26,
+            "word": "\u53f2",
+            "meaning": "history"
+        },
+        {
+            "id": 27,
+            "word": "\u6b74<pos=0em><sup>\u308c\u304d</sup><pos=1em>\u53f2<pos=1em><sup>\u3057</sup><pos=2em>",
+            "meaning": " history"
+        },
+        {
+            "id": 28,
+            "word": "\u4e5f",
+            "meaning": "to be)"
+        },
+        {
+            "id": 29,
+            "word": "\u5730",
+            "meaning": "ground"
+        },
+        {
+            "id": 30,
+            "word": "\u5730<pos=0em><sup>\u3061</sup><pos=1em>",
+            "meaning": " earth"
+        },
+        {
+            "id": 31,
+            "word": "\u5730<pos=0em><sup>\u3061</sup><pos=1em>\u7406<pos=1em><sup>\u308a</sup><pos=2em>",
+            "meaning": " geography"
+        },
+        {
+            "id": 32,
+            "word": "\u6708",
+            "meaning": "moon"
+        },
+        {
+            "id": 33,
+            "word": "\u80b2",
+            "meaning": "nurture"
+        },
+        {
+            "id": 34,
+            "word": "\u6559<pos=0em><sup>\u304d\u3087\u3046</sup><pos=1.5em>\u80b2<pos=1.5em><sup>\u3044\u304f</sup><pos=2em>",
+            "meaning": " education"
+        },
+        {
+            "id": 35,
+            "word": "\u6559<pos=0em><sup>\u304d\u3087\u3046</sup><pos=1.5em>\u80b2<pos=1.5em><sup>\u3044\u304f</sup><pos=2.5em>\u5b66<pos=2.5em><sup>\u304c\u304f</sup><pos=2em>",
+            "meaning": " pedagogy"
+        },
+        {
+            "id": 36,
+            "word": "\u6c11",
+            "meaning": "people"
+        },
+        {
+            "id": 37,
+            "word": "\u4eba",
+            "meaning": "person"
+        },
+        {
+            "id": 38,
+            "word": "\u53e3",
+            "meaning": "mouth"
+        },
+        {
+            "id": 39,
+            "word": "\u8c37",
+            "meaning": "valley"
+        },
+        {
+            "id": 40,
+            "word": "\u4fd7",
+            "meaning": "common"
+        },
+        {
+            "id": 41,
+            "word": "\u6c11<pos=0em><sup>\u307f\u3093</sup><pos=1em>\u4fd7<pos=1em><sup>\u305e\u304f</sup><pos=2em>\u5b66<pos=2em><sup>\u304c\u304f</sup><pos=2em>",
+            "meaning": " folklore studies"
+        },
+        {
+            "id": 42,
+            "word": "\u5730<pos=0em><sup>\u3061</sup><pos=1em>\u5b66<pos=1em><sup>\u304c\u304f</sup><pos=2em>",
+            "meaning": " earth science"
+        },
+        {
+            "id": 43,
+            "word": "\u7c73",
+            "meaning": "rice"
+        },
+        {
+            "id": 44,
+            "word": "\u5973",
+            "meaning": "woman"
+        },
+        {
+            "id": 45,
+            "word": "\u6570",
+            "meaning": "number"
+        },
+        {
+            "id": 46,
+            "word": "\u6570<pos=0em><sup>\u3059\u3046</sup><pos=1em>",
+            "meaning": " several"
+        },
+        {
+            "id": 47,
+            "word": "\u6570<pos=0em><sup>\u3059\u3046</sup><pos=1em>\u5b66<pos=1em><sup>\u304c\u304f</sup><pos=2em>",
+            "meaning": " mathematics"
+        },
+        {
+            "id": 48,
+            "word": "\u725b",
+            "meaning": "cow"
+        },
+        {
+            "id": 49,
+            "word": "\u52ff",
+            "meaning": "must not"
+        },
+        {
+            "id": 50,
+            "word": "\u7269",
+            "meaning": "thing"
+        },
+        {
+            "id": 51,
+            "word": "\u7269<pos=0em><sup>\u3076\u3064</sup><pos=1em>\u7406<pos=1em><sup>\u308a</sup><pos=2em>",
+            "meaning": " laws of nature"
+        },
+        {
+            "id": 52,
+            "word": "\u5315",
+            "meaning": "spoon"
+        },
+        {
+            "id": 53,
+            "word": "\u5316",
+            "meaning": "transformation"
+        },
+        {
+            "id": 54,
+            "word": "\u5316<pos=0em><sup>\u304b</sup><pos=1em>\u5b66<pos=1em><sup>\u304c\u304f</sup><pos=2em>",
+            "meaning": " chemistry"
+        },
+        {
+            "id": 55,
+            "word": "\u751f",
+            "meaning": "life"
+        },
+        {
+            "id": 56,
+            "word": "\u751f<pos=0em><sup>\u305b\u3044</sup><pos=1em>\u7269<pos=1em><sup>\u3076\u3064</sup><pos=2em>",
+            "meaning": " living thing"
+        },
+        {
+            "id": 57,
+            "word": "\u751f<pos=0em><sup>\u305b\u3044</sup><pos=1em>\u7269<pos=1em><sup>\u3076\u3064</sup><pos=2em>\u5b66<pos=2em><sup>\u304c\u304f</sup><pos=2em>",
+            "meaning": " biology"
+        },
+        {
+            "id": 58,
+            "word": "\u5f73",
+            "meaning": "stand still"
+        },
+        {
+            "id": 59,
+            "word": "\u4e8d",
+            "meaning": "take a small step"
+        },
+        {
+            "id": 60,
+            "word": "\u884c",
+            "meaning": "go"
+        },
+        {
+            "id": 61,
+            "word": "\u8853",
+            "meaning": "technique"
+        },
+        {
+            "id": 62,
+            "word": "\u8853<pos=0em><sup>\u3058\u3085\u3064</sup><pos=1em>",
+            "meaning": " art"
+        },
+        {
+            "id": 63,
+            "word": "\u4e91",
+            "meaning": "quote"
+        },
+        {
+            "id": 64,
+            "word": "\u82b8",
+            "meaning": "art"
+        },
+        {
+            "id": 65,
+            "word": "\u82b8<pos=0em><sup>\u3052\u3044</sup><pos=1em>\u8853<pos=1em><sup>\u3058\u3085\u3064</sup><pos=2em>",
+            "meaning": "art"
+        },
+        {
+            "id": 66,
+            "word": "\u672c",
+            "meaning": "book"
+        },
+        {
+            "id": 67,
+            "word": "\u4f53",
+            "meaning": "body"
+        },
+        {
+            "id": 68,
+            "word": "\u4f53<pos=0em><sup>\u305f\u3044</sup><pos=1em>\u80b2<pos=1em><sup>\u3044\u304f</sup><pos=2em>",
+            "meaning": " physical education"
+        },
+        {
+            "id": 69,
+            "word": "\u4eba<pos=0em><sup>\u3058\u3093</sup><pos=1em>",
+            "meaning": "-ian"
+        },
+        {
+            "id": 70,
+            "word": "\u8a00",
+            "meaning": "say"
+        },
+        {
+            "id": 71,
+            "word": "\u4e94",
+            "meaning": "five"
+        },
+        {
+            "id": 72,
+            "word": "\u8a9e",
+            "meaning": "language"
+        },
+        {
+            "id": 73,
+            "word": "\u8a00<pos=0em><sup>\u3052\u3093</sup><pos=1em>\u8a9e<pos=1em><sup>\u3054</sup><pos=2em>",
+            "meaning": " language"
+        },
+        {
+            "id": 74,
+            "word": "\u7269<pos=0em><sup>\u3082\u306e</sup><pos=1em>\u8a9e<pos=1em><sup>\u304c\u305f\u308a</sup><pos=2em>",
+            "meaning": " story"
+        },
+        {
+            "id": 75,
+            "word": "\u304e\u3063\u3061\u308a",
+            "meaning": " tightly"
+        },
+        {
+            "id": 76,
+            "word": "\u5927",
+            "meaning": "large"
+        },
+        {
+            "id": 77,
+            "word": "\u76ee",
+            "meaning": "eye"
+        },
+        {
+            "id": 78,
+            "word": "\u8c9d",
+            "meaning": "shellfish"
+        },
+        {
+            "id": 79,
+            "word": "\u9801",
+            "meaning": "page"
+        },
+        {
+            "id": 80,
+            "word": "\u985e",
+            "meaning": "kind)"
+        },
+        {
+            "id": 81,
+            "word": "\u4eba<pos=0em><sup>\u3058\u3093</sup><pos=1em>\u985e<pos=1em><sup>\u308b\u3044</sup><pos=2em>",
+            "meaning": " mankind"
+        },
+        {
+            "id": 82,
+            "word": "\u5fc3<pos=0em><sup>\u3053\u3053\u308d</sup><pos=1em>",
+            "meaning": " mind"
+        },
+        {
+            "id": 83,
+            "word": "\u77e2",
+            "meaning": "arrow"
+        },
+        {
+            "id": 84,
+            "word": "\u77e5",
+            "meaning": "know"
+        },
+        {
+            "id": 85,
+            "word": "\u7acb",
+            "meaning": "standing up"
+        },
+        {
+            "id": 86,
+            "word": "\u65e5",
+            "meaning": "sun"
+        },
+        {
+            "id": 87,
+            "word": "\u97f3",
+            "meaning": "sound"
+        },
+        {
+            "id": 88,
+            "word": "\u5f0b",
+            "meaning": "shoot with a bow"
+        },
+        {
+            "id": 89,
+            "word": "\u6208",
+            "meaning": "dagger-axe"
+        },
+        {
+            "id": 90,
+            "word": "\u6220",
+            "meaning": "potte"
+        },
+        {
+            "id": 91,
+            "word": "\u8b58",
+            "meaning": "be conscious of"
+        },
+        {
+            "id": 92,
+            "word": "\u77e5<pos=0em><sup>\u3061</sup><pos=1em>\u8b58<pos=1em><sup>\u3057\u304d</sup><pos=2em>",
+            "meaning": " knowledge"
+        },
+        {
+            "id": 93,
+            "word": "\u5165",
+            "meaning": "enter"
+        },
+        {
+            "id": 94,
+            "word": "\u8fbc",
+            "meaning": "crowded"
+        },
+        {
+            "id": 95,
+            "word": "\u8fbc<pos=0em><sup>\u3053</sup><pos=1em>\u3080",
+            "meaning": " to be crowded"
+        }
+    ],
+    "$type": "WordPack"
+}

@@ -1,0 +1,527 @@
+{
+    "wordPackName": "Hiragana",
+    "wordPackAffinity": "arcane",
+    "wordPairs": [
+        {
+            "id": -1,
+            "word": "\u3042",
+            "meaning": "a"
+        },
+        {
+            "id": -1,
+            "word": "\u3044",
+            "meaning": "i"
+        },
+        {
+            "id": -1,
+            "word": "\u3046",
+            "meaning": "u"
+        },
+        {
+            "id": -1,
+            "word": "\u3048",
+            "meaning": "e"
+        },
+        {
+            "id": -1,
+            "word": "\u304a",
+            "meaning": "o"
+        },
+        {
+            "id": -1,
+            "word": "\u304b",
+            "meaning": "ka"
+        },
+        {
+            "id": -1,
+            "word": "\u304d",
+            "meaning": "ki"
+        },
+        {
+            "id": -1,
+            "word": "\u304f",
+            "meaning": "ku"
+        },
+        {
+            "id": -1,
+            "word": "\u3051",
+            "meaning": "ke"
+        },
+        {
+            "id": -1,
+            "word": "\u3053",
+            "meaning": "ko"
+        },
+        {
+            "id": -1,
+            "word": "\u3055",
+            "meaning": "sa"
+        },
+        {
+            "id": -1,
+            "word": "\u3057",
+            "meaning": "shi"
+        },
+        {
+            "id": -1,
+            "word": "\u3059",
+            "meaning": "su"
+        },
+        {
+            "id": -1,
+            "word": "\u305b",
+            "meaning": "se"
+        },
+        {
+            "id": -1,
+            "word": "\u305d",
+            "meaning": "so"
+        },
+        {
+            "id": -1,
+            "word": "\u305f",
+            "meaning": "ta"
+        },
+        {
+            "id": -1,
+            "word": "\u3061",
+            "meaning": "chi"
+        },
+        {
+            "id": -1,
+            "word": "\u3064",
+            "meaning": "tsu"
+        },
+        {
+            "id": -1,
+            "word": "\u3066",
+            "meaning": "te"
+        },
+        {
+            "id": -1,
+            "word": "\u3068",
+            "meaning": "to"
+        },
+        {
+            "id": -1,
+            "word": "\u306a",
+            "meaning": "na"
+        },
+        {
+            "id": -1,
+            "word": "\u306b",
+            "meaning": "ni"
+        },
+        {
+            "id": -1,
+            "word": "\u306c",
+            "meaning": "nu"
+        },
+        {
+            "id": -1,
+            "word": "\u306d",
+            "meaning": "ne"
+        },
+        {
+            "id": -1,
+            "word": "\u306e",
+            "meaning": "no"
+        },
+        {
+            "id": -1,
+            "word": "\u306f",
+            "meaning": "ha"
+        },
+        {
+            "id": -1,
+            "word": "\u3072",
+            "meaning": "hi"
+        },
+        {
+            "id": -1,
+            "word": "\u3075",
+            "meaning": "fu"
+        },
+        {
+            "id": -1,
+            "word": "\u3078",
+            "meaning": "he"
+        },
+        {
+            "id": -1,
+            "word": "\u307b",
+            "meaning": "ho"
+        },
+        {
+            "id": -1,
+            "word": "\u307e",
+            "meaning": "ma"
+        },
+        {
+            "id": -1,
+            "word": "\u307f",
+            "meaning": "mi"
+        },
+        {
+            "id": -1,
+            "word": "\u3080",
+            "meaning": "mu"
+        },
+        {
+            "id": -1,
+            "word": "\u3081",
+            "meaning": "me"
+        },
+        {
+            "id": -1,
+            "word": "\u3082",
+            "meaning": "mo"
+        },
+        {
+            "id": -1,
+            "word": "\u3089",
+            "meaning": "ra"
+        },
+        {
+            "id": -1,
+            "word": "\u308a",
+            "meaning": "ri"
+        },
+        {
+            "id": -1,
+            "word": "\u308b",
+            "meaning": "ru"
+        },
+        {
+            "id": -1,
+            "word": "\u308c",
+            "meaning": "re"
+        },
+        {
+            "id": -1,
+            "word": "\u308d",
+            "meaning": "ro"
+        },
+        {
+            "id": -1,
+            "word": "\u308f",
+            "meaning": "wa"
+        },
+        {
+            "id": -1,
+            "word": "\u3092",
+            "meaning": "wo"
+        },
+        {
+            "id": -1,
+            "word": "\u3093",
+            "meaning": "n"
+        },
+        {
+            "id": -1,
+            "word": "\u304c",
+            "meaning": "ga"
+        },
+        {
+            "id": -1,
+            "word": "\u304e",
+            "meaning": "gi"
+        },
+        {
+            "id": -1,
+            "word": "\u3050",
+            "meaning": "gu"
+        },
+        {
+            "id": -1,
+            "word": "\u3052",
+            "meaning": "ge"
+        },
+        {
+            "id": -1,
+            "word": "\u3054",
+            "meaning": "go"
+        },
+        {
+            "id": -1,
+            "word": "\u3056",
+            "meaning": "za"
+        },
+        {
+            "id": -1,
+            "word": "\u3058",
+            "meaning": "ji"
+        },
+        {
+            "id": -1,
+            "word": "\u305a",
+            "meaning": "zu"
+        },
+        {
+            "id": -1,
+            "word": "\u305c",
+            "meaning": "ze"
+        },
+        {
+            "id": -1,
+            "word": "\u305e",
+            "meaning": "zo"
+        },
+        {
+            "id": -1,
+            "word": "\u3060",
+            "meaning": "da"
+        },
+        {
+            "id": -1,
+            "word": "\u3062",
+            "meaning": "ji"
+        },
+        {
+            "id": -1,
+            "word": "\u3065",
+            "meaning": "zu"
+        },
+        {
+            "id": -1,
+            "word": "\u3067",
+            "meaning": "de"
+        },
+        {
+            "id": -1,
+            "word": "\u3069",
+            "meaning": "do"
+        },
+        {
+            "id": -1,
+            "word": "\u3070",
+            "meaning": "ba"
+        },
+        {
+            "id": -1,
+            "word": "\u3073",
+            "meaning": "bi"
+        },
+        {
+            "id": -1,
+            "word": "\u3076",
+            "meaning": "bu"
+        },
+        {
+            "id": -1,
+            "word": "\u3079",
+            "meaning": "be"
+        },
+        {
+            "id": -1,
+            "word": "\u307c",
+            "meaning": "bo"
+        },
+        {
+            "id": -1,
+            "word": "\u3071",
+            "meaning": "pa"
+        },
+        {
+            "id": -1,
+            "word": "\u3074",
+            "meaning": "pi"
+        },
+        {
+            "id": -1,
+            "word": "\u3077",
+            "meaning": "pu"
+        },
+        {
+            "id": -1,
+            "word": "\u307a",
+            "meaning": "pe"
+        },
+        {
+            "id": -1,
+            "word": "\u307d",
+            "meaning": "po"
+        },
+        {
+            "id": -1,
+            "word": "\u3084",
+            "meaning": "ya"
+        },
+        {
+            "id": -1,
+            "word": "\u3086",
+            "meaning": "yu"
+        },
+        {
+            "id": -1,
+            "word": "\u3088",
+            "meaning": "yo"
+        },
+        {
+            "id": -1,
+            "word": "\u304d\u3083",
+            "meaning": "kya"
+        },
+        {
+            "id": -1,
+            "word": "\u304d\u3085",
+            "meaning": "kyu"
+        },
+        {
+            "id": -1,
+            "word": "\u304d\u3087",
+            "meaning": "kyo"
+        },
+        {
+            "id": -1,
+            "word": "\u3057\u3083",
+            "meaning": "sha"
+        },
+        {
+            "id": -1,
+            "word": "\u3057\u3085",
+            "meaning": "shu"
+        },
+        {
+            "id": -1,
+            "word": "\u3057\u3087",
+            "meaning": "sho"
+        },
+        {
+            "id": -1,
+            "word": "\u3061\u3083",
+            "meaning": "cha"
+        },
+        {
+            "id": -1,
+            "word": "\u3061\u3085",
+            "meaning": "chu"
+        },
+        {
+            "id": -1,
+            "word": "\u3061\u3087",
+            "meaning": "cho"
+        },
+        {
+            "id": -1,
+            "word": "\u306b\u3083",
+            "meaning": "nya"
+        },
+        {
+            "id": -1,
+            "word": "\u306b\u3085",
+            "meaning": "nyu"
+        },
+        {
+            "id": -1,
+            "word": "\u306b\u3087",
+            "meaning": "nyo"
+        },
+        {
+            "id": -1,
+            "word": "\u3072\u3083",
+            "meaning": "hya"
+        },
+        {
+            "id": -1,
+            "word": "\u3072\u3085",
+            "meaning": "hyu"
+        },
+        {
+            "id": -1,
+            "word": "\u3072\u3087",
+            "meaning": "hyo"
+        },
+        {
+            "id": -1,
+            "word": "\u307f\u3083",
+            "meaning": "mya"
+        },
+        {
+            "id": -1,
+            "word": "\u307f\u3085",
+            "meaning": "myu"
+        },
+        {
+            "id": -1,
+            "word": "\u307f\u3087",
+            "meaning": "myo"
+        },
+        {
+            "id": -1,
+            "word": "\u308a\u3083",
+            "meaning": "rya"
+        },
+        {
+            "id": -1,
+            "word": "\u308a\u3085",
+            "meaning": "ryu"
+        },
+        {
+            "id": -1,
+            "word": "\u308a\u3087",
+            "meaning": "ryo"
+        },
+        {
+            "id": -1,
+            "word": "\u304e\u3083",
+            "meaning": "gya"
+        },
+        {
+            "id": -1,
+            "word": "\u304e\u3085",
+            "meaning": "gyu"
+        },
+        {
+            "id": -1,
+            "word": "\u304e\u3087",
+            "meaning": "gyo"
+        },
+        {
+            "id": -1,
+            "word": "\u3058\u3083",
+            "meaning": "ja"
+        },
+        {
+            "id": -1,
+            "word": "\u3058\u3085",
+            "meaning": "ju"
+        },
+        {
+            "id": -1,
+            "word": "\u3058\u3087",
+            "meaning": "jo"
+        },
+        {
+            "id": -1,
+            "word": "\u3073\u3083",
+            "meaning": "bya"
+        },
+        {
+            "id": -1,
+            "word": "\u3073\u3085",
+            "meaning": "byu"
+        },
+        {
+            "id": -1,
+            "word": "\u3073\u3087",
+            "meaning": "byo"
+        },
+        {
+            "id": -1,
+            "word": "\u3074\u3083",
+            "meaning": "pya"
+        },
+        {
+            "id": -1,
+            "word": "\u3074\u3085",
+            "meaning": "pyu"
+        },
+        {
+            "id": -1,
+            "word": "\u3074\u3087",
+            "meaning": "pyo"
+        }
+    ],
+    "$type": "WordPack"
+}

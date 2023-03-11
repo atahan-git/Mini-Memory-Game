@@ -1,0 +1,21 @@
+{
+    "name": "CoreScripts",
+    "rootNamespace": "",
+    "references": [
+        "GUID:a55a177d34a6ae74395901c9258e6b94",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:5266a9fadb1c60548965e81d8ecf61c5",
+        "GUID:15fc0a57446b3144c949da3e2b9737a9",
+        "GUID:df380645f10b7bc4b97d4f5eb6303d95",
+        "GUID:68794e08dd2a4c4418ce606113fa4c4e"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
