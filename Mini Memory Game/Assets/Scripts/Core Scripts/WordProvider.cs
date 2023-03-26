@@ -37,10 +37,10 @@ public class WordProvider : MonoBehaviour {
         if (activeWords.Count >= maxActiveWords)
             return null;
 
-        var totalActiveWordLength = GetTotalActiveWordLength();
+        /*var totalActiveWordLength = GetTotalActiveWordLength();
 
         if (totalActiveWordLength > maxTotalActiveWordLength)
-            return null;
+            return null;*/
         
         var wordPack = PlayerLoadoutController.s.GetRandomPack();
         if (wordPack.wordPairs.Count <= 0) {
