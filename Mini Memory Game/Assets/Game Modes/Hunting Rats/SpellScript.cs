@@ -37,7 +37,7 @@ public class SpellScript : MonoBehaviour {
             deathEffect.SetUp(myTarget);
             
             WordProvider.s.SpawnCoin(isCorrect, myTarget.transform.position);
-            Destroy(myTarget.gameObject);
+            myTarget.DieForReal();
             Destroy(gameObject);
         }
     }

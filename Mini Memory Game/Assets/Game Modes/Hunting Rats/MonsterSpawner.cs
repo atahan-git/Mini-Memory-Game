@@ -17,80 +17,100 @@ public class MonsterSpawner : MonoBehaviour {
 
     public GameObject monsterPrefab;
 
-    public float monsterDelay = 5f;
-    public float currentDelay = 0;
-    [Range(0.5f,1f)]
-    public float delayShortening = 0.95f;
+    float spawnDelay = 5f;
+    float currentDelay = 0;
+    float spawnDelayShortening = 0.98f;
+    private float moveDelayShortening = 0.98f;
 
     public List<MonsterScript> allMonsters = new List<MonsterScript>();
+    public List<GameObject> dyingMonsters = new List<GameObject>();
 
     public GameObject deathEffect;
 
-    public float globalMoveDelayMultiplier = 1f;
+    public float moveDelay = 1f;
 
     public int remainingRats = 50;
     public TMP_Text remainingRatsText;
 
 
     public Transform boostHeight;
-    [HideInInspector]
-    public float boostHeightY;
+    [HideInInspector] public float boostHeightY => boostHeight.transform.position.y;
 
     private void Start() {
-        boostHeightY = boostHeight.transform.position.y;
+        //boostHeightY = boostHeight.transform.position.y;
+        
+        DifficultyController.s.OnDifficultySet.AddListener(SetDifficulty);
     }
 
+    private Difficulty difficulty;
+    void SetDifficulty() {
+        difficulty = DifficultyController.s.GetCurrentDifficulty();
+        spawnDelay = difficulty.startSpawnDelay;
+        spawnDelayShortening = difficulty.spawnDelayShortening;
+        moveDelay = difficulty.startMoveDelay;
+        moveDelayShortening = difficulty.moveDelayShortening;
+        remainingRats = difficulty.ratCount;
+    }
+
+    private float miniDelay = 0;
     void Update() {
-        if (PauseController.s.isPlaying && remainingRats > 0) {
-            if (allMonsters.Count == 0) {
-                SpawnMonster(out  WordWrapper wrapper);
-                currentDelay += wrapper.GetExtraTimeDelay();
-            }
-
-            if (currentDelay <= 0) {
-                var success = SpawnMonster(out  WordWrapper wrapper);
-                currentDelay = monsterDelay + wrapper.GetExtraTimeDelay();
-                if (success) {
-                    monsterDelay *= delayShortening;
-                    monsterDelay = Mathf.Clamp(monsterDelay, 0.5f, 10f);
-                    globalMoveDelayMultiplier *= delayShortening;
-                    globalMoveDelayMultiplier = Mathf.Clamp(globalMoveDelayMultiplier, 0.6f, 1f);
+        if (DifficultyController.s.gameHasBegun) {
+            if (PauseController.s.isPlaying && remainingRats > 0 && allMonsters.Count < difficulty.maxRatCount) {
+                if (allMonsters.Count < difficulty.minRatCount && miniDelay <= 0) {
+                    SpawnMonster(out WordWrapper wrapper);
+                    currentDelay += wrapper.GetExtraTimeDelay() * difficulty.longWordDelayMultiplier;
+                    miniDelay = 0.1f;
                 }
+
+                if (currentDelay <= 0) {
+                    var success = SpawnMonster(out WordWrapper wrapper);
+                    currentDelay = spawnDelay + wrapper.GetExtraTimeDelay() * difficulty.longWordDelayMultiplier;
+                    if (success) {
+                        spawnDelay *= spawnDelayShortening;
+                        spawnDelay = Mathf.Clamp(spawnDelay, difficulty.minSpawnDelay, 10f);
+                        moveDelay *= moveDelayShortening;
+                        moveDelay = Mathf.Clamp(moveDelay, difficulty.minMoveDelay, 3);
+                    }
+                }
+
+                miniDelay -= Time.deltaTime;
+                currentDelay -= Time.deltaTime;
             }
 
-            currentDelay -= Time.deltaTime;
-        }
-
-        if (PauseController.s.isPlaying && (remainingRats + allMonsters.Count <= 0)) {
-            WinLoseFinishController.s.Win();
+            if (PauseController.s.isPlaying && (remainingRats + allMonsters.Count + dyingMonsters.Count <= 0) && !winBegun) {
+                winBegun = true;
+                WinLoseFinishController.s.Win();
+            }
         }
     }
+
+    private bool winBegun = false;
 
     public Queue<int> lastLocations = new Queue<int>();
 
     bool SpawnMonster(out WordWrapper wordWrapper) {
-        var index = Random.Range(0, spawnLocations.Length);
-        for (int i = 0; i < 20; i++) {
-            if (lastLocations.Contains(index)) {
-                index = Random.Range(0, spawnLocations.Length);
-            } else {
-                break;
-            }
-        }
-
-        lastLocations.Enqueue(index);
-        var location = spawnLocations[index];
-
-        if (lastLocations.Count > 5) {
-            lastLocations.Dequeue();
-        }
-
-        var monsterScript = Instantiate(monsterPrefab, transform).GetComponent<MonsterScript>();
-        monsterScript.transform.position = new Vector3(location.transform.position.x, location.transform.position.y, 10);
-
         wordWrapper = WordProvider.s.GetWord();
 
         if (wordWrapper != null) {
+            var index = Random.Range(0, spawnLocations.Length);
+            for (int i = 0; i < 20; i++) {
+                if (lastLocations.Contains(index)) {
+                    index = Random.Range(0, spawnLocations.Length);
+                } else {
+                    break;
+                }
+            }
+
+            lastLocations.Enqueue(index);
+            var location = spawnLocations[index];
+
+            if (lastLocations.Count > 5) {
+                lastLocations.Dequeue();
+            }
+
+            var monsterScript = Instantiate(monsterPrefab, transform).GetComponent<MonsterScript>();
+            monsterScript.transform.position = new Vector3(location.transform.position.x, location.transform.position.y, 10);
+
             monsterScript.Setup(wordWrapper);
             allMonsters.Add(monsterScript);
 
@@ -99,7 +119,6 @@ public class MonsterSpawner : MonoBehaviour {
 
             return true;
         }
-
         return false;
     }
 
@@ -110,5 +129,9 @@ public class MonsterSpawner : MonoBehaviour {
         }
 
         throw new NoNullAllowedException($"Can't find mosnter with wordwrapper {wordWrapper}");
+    }
+
+    public int GetAliveMonsterCount() {
+        return allMonsters.Count;
     }
 }

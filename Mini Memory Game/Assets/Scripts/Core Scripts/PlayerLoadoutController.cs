@@ -117,4 +117,12 @@ public class PlayerLoadoutController : MonoBehaviour {
 			return WordPackLoader.s.allWordPacks.Find(pack => pack.wordPackName == "Katakana");
 		}
 	}
+
+	public int GetNewWordWeight() {
+		if (hiraganaKatakanaOnlyMode) {
+			return 2;
+		} else {
+			return 1;
+		}
+	}
 }

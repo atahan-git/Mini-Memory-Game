@@ -22,12 +22,14 @@ public class SlowdownPower : MonoBehaviour {
 
     public bool abilityActive = false;
 
-    float slowDownSpeed = 2f;
+    float slowDownSpeed = 5f;
     float slowedDownTime = 0f;
 
     private void Start() {
         WordProvider.s.OnHintSpawned.AddListener(ResetCooldown);
-        WordSystemController.s.OnTryingMatch.AddListener(DisableAbility);
+        WordSystemController.s.OnCorrectMatch.AddListener(DisableAbilityOnCorrect);
+        WordSystemController.s.OnTryingMatch.AddListener(DisableAfterCertainCount);
+        WinLoseFinishController.s.OnGameFinished.AddListener(DisableAbility);
     }
 
     // Update is called once per frame
@@ -47,6 +49,8 @@ public class SlowdownPower : MonoBehaviour {
         } else {
             TimeController.s.SetTimeScale(Mathf.Lerp(Time.timeScale, 1f, slowDownSpeed*Time.unscaledDeltaTime));
         }
+
+        justActivatedLock -= Time.unscaledDeltaTime;
     }
 
 
@@ -58,10 +62,29 @@ public class SlowdownPower : MonoBehaviour {
         if (canUse) {
             abilityActive = true;
             curCooldown = 0;
+            justActivatedLock = 0.1f;
+            disableCount = 0;
+        }
+    }
+
+    private float justActivatedLock;
+
+    public void DisableAbilityOnCorrect(WordWrapper arg0) {
+        if (justActivatedLock <= 0 && MonsterSpawner.s.GetAliveMonsterCount() == 0) {
+            abilityActive = false;
         }
     }
 
     public void DisableAbility() {
         abilityActive = false;
+    }
+
+    public int disableCount = 0;
+    public void DisableAfterCertainCount() {
+        disableCount += 1;
+
+        if (disableCount >= 3) {
+            abilityActive = false;
+        }
     }
 }

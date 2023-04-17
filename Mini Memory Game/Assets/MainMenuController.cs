@@ -7,6 +7,13 @@ using CloudLoginUnity;
 using UnityEngine.UI;
 
 public class MainMenuController : MonoBehaviour {
+
+	public GameObject buyRatsMenu;
+
+
+	public void ToggleBuyRatsMenu() {
+		buyRatsMenu.SetActive(!buyRatsMenu.activeSelf);
+	}
 	private void Start() {
 		email.text = PlayerPrefs.GetString("userEmail");
 		//password.text = PlayerPrefs.GetString("password");

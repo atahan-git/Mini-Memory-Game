@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class WinLoseFinishController : MonoBehaviour {
 
@@ -21,6 +22,8 @@ public class WinLoseFinishController : MonoBehaviour {
 	private string startPercent;
 	private int startCoins;
 
+	public UnityEvent OnGameFinished = new UnityEvent();
+
 	private void Start() {
 		gameOverScreen.SetActive(false);
 		startPercent = XPSlider.s.GetProgressPercent();
@@ -29,6 +32,7 @@ public class WinLoseFinishController : MonoBehaviour {
 
 
 	public void Win() {
+		DataSaver.s.GetCurrentSave().coinCount += DifficultyController.s.GetCurrentDifficulty().coinsOnVictory;
 		GameOver();
 	}
 
@@ -38,6 +42,7 @@ public class WinLoseFinishController : MonoBehaviour {
 	}
 
 	void GameOver() {
+		OnGameFinished?.Invoke();
 		PauseController.s.HidePauseScreen();
 		PauseController.s.isPlaying = false;
 		isGameOver = true;

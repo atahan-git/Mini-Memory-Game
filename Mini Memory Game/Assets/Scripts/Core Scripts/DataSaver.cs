@@ -114,7 +114,8 @@ public class DataSaver {
 	public void Update() {
 		curSaveTime += Time.deltaTime;
 
-		if (curSaveTime > saveTimer && saveInNextCycle) { // dont save too many times in a row as we are syncing with cloud too.
+		if (curSaveTime > saveTimer && saveInNextCycle && cloudLoadComplete) { // dont save too many times in a row as we are syncing with cloud too.
+			// also only save if we did cloud load before so we dont accidently override the cloud data.
 			curSaveTime = 0;
 			CloudSave();
 			saveInNextCycle = false;
@@ -355,6 +356,8 @@ public class DataSaver {
 		//public WordPack mainWordPack = new WordPack();
 
 		public int coinCount;
+
+		public List<string> unlockedUpgrades = new List<string>();
 		
 		public UserWordPackProgress GetProgress(WordPack wordPack) {
 			if (wordPackData == null)

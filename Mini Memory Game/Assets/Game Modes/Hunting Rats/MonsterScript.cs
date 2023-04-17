@@ -10,7 +10,6 @@ public class MonsterScript : MonoBehaviour {
 
 	public WordWrapper myWord;
 
-	public float moveDelay = 1;
 	private float curDelay;
 	public float moveAmount = 1;
 
@@ -22,7 +21,7 @@ public class MonsterScript : MonoBehaviour {
 
 	public void Setup(WordWrapper word) {
 		myWord = word;
-		wordLengthSpeedMultiplier = word.GetSpeedMultiplier();
+		wordLengthSpeedMultiplier = word.GetSpeedMultiplier()* DifficultyController.s.GetCurrentDifficulty().longWordDelayMultiplier;
 	}
 
 	private void Start() {
@@ -42,7 +41,7 @@ public class MonsterScript : MonoBehaviour {
 				distBoost = Mathf.Clamp(distBoost, 0.1f, 1);
 			}
 
-			if (curDelay > moveDelay * MonsterSpawner.s.globalMoveDelayMultiplier * distBoost * wordLengthSpeedMultiplier) {
+			if (curDelay > MonsterSpawner.s.moveDelay * distBoost * wordLengthSpeedMultiplier) {
 				Move();
 
 				curDelay = 0;
@@ -73,8 +72,14 @@ public class MonsterScript : MonoBehaviour {
 
 	public void SpellShot() {
 		MonsterSpawner.s.allMonsters.Remove(this);
+		MonsterSpawner.s.dyingMonsters.Add(gameObject);
 	}
 
+	public void DieForReal() {
+		MonsterSpawner.s.dyingMonsters.Remove(gameObject);
+		Destroy(gameObject);
+	}
+	
 	private void OnMouseDown() {
 		FreeSpellController.s.UseSpell(this);
 	}

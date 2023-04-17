@@ -21,6 +21,13 @@ public class CoinAmount : MonoBehaviour {
 
     private void Start() {
         CoinAmountChanged();
+        DataSaver.s.CallOnLoad(CoinAmountChanged);
+        DataSaver.s.CallOnCloudLoad(CoinAmountChanged);
+    }
+
+    private void OnDestroy() {
+        DataSaver.s.RemoveFromLoadCall(CoinAmountChanged);
+        DataSaver.s.RemoveFromCloudLoadCall(CoinAmountChanged);
     }
 
     void Update() {

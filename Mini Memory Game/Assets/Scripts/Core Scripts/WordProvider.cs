@@ -19,8 +19,6 @@ public class WordProvider : MonoBehaviour {
 
 
     public int maxHints = 3;
-    public int maxActiveWords = 10;
-    public int maxTotalActiveWordLength = 20;
 
     [HideInInspector]
     public UnityEvent OnHintSpawned;
@@ -30,13 +28,11 @@ public class WordProvider : MonoBehaviour {
     public GameObject coin;
     public GameObject noCoin;
 
+
     /// <summary>
     /// return null if there are too many active words.
     /// </summary>
     public WordWrapper GetWord() {
-        if (activeWords.Count >= maxActiveWords)
-            return null;
-
         /*var totalActiveWordLength = GetTotalActiveWordLength();
 
         if (totalActiveWordLength > maxTotalActiveWordLength)
@@ -52,9 +48,9 @@ public class WordProvider : MonoBehaviour {
 
         var banList = new List<int>();
 
-        var canShowNewWord = allHints.Count < maxHints;
+        var newWordWeight = (allHints.Count < maxHints ? 1 : 0) * PlayerLoadoutController.s.GetNewWordWeight();
 
-        var wordPair = Scheduler.GetNextWordPair(wordPack, userPackProgress, true, banList, canShowNewWord);
+        var wordPair = Scheduler.GetNextWordPair(wordPack, userPackProgress, true, banList, newWordWeight);
         var userWordPairProgress = userPackProgress.GetWordPairData(wordPair);
         
         var wordWrapper = new WordWrapper() {

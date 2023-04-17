@@ -51,11 +51,11 @@ public static class Scheduler {
 		return (1 - Mathf.Max((probability - 0.5f) * 2, 0)) * 100;
 	}
 
-	static float[] GenerateWeights(DataSaver.UserWordPackProgress progress, bool isLearningMeaningSide, bool includeNewWord, List<int> banList) {
+	static float[] GenerateWeights(DataSaver.UserWordPackProgress progress, bool isLearningMeaningSide, int newWordWeightMultiplier, List<int> banList) {
 		var wordPairData = progress.GetWordPairData();
 
 		var weightCount = wordPairData.Count;
-		if (includeNewWord)
+		if (newWordWeightMultiplier > 0)
 			weightCount += 1;
 
 		float[] weights = new float[weightCount];
@@ -82,8 +82,8 @@ public static class Scheduler {
 			}*/
 		}
 
-		if (includeNewWord)
-			weights[weightCount - 1] = newWordWeight;
+		if (newWordWeightMultiplier > 0 )
+			weights[weightCount - 1] = newWordWeight * newWordWeightMultiplier;
 
 		return weights;
 	}
@@ -97,7 +97,7 @@ public static class Scheduler {
 		var correctCount = progress.GetCorrect(true);
 		var wrongCount = progress.GetWrong(true);
 
-		return (correctCount > 20) && (correctCount > wrongCount * 3);
+		return (correctCount > 30) && (correctCount > wrongCount * 10);
 	}
 
 	
@@ -126,8 +126,8 @@ public static class Scheduler {
 		return leastRecallProb < 0.7f;
 	}
 
-	static int GetReviewWord(DataSaver.UserWordPackProgress progress, bool isLearningMeaningSide, bool includeNewWord, List<int> banList) {
-		var weights = GenerateWeights(progress, isLearningMeaningSide, includeNewWord, banList);
+	static int GetReviewWord(DataSaver.UserWordPackProgress progress, bool isLearningMeaningSide, int newWordWeightMultiplier, List<int> banList) {
+		var weights = GenerateWeights(progress, isLearningMeaningSide, newWordWeightMultiplier, banList);
 
 		int nextMatch = GetRandomWeightedIndex(weights);
 
@@ -135,7 +135,7 @@ public static class Scheduler {
 			nextMatch = GetRandomWeightedIndex(weights);
 		}
 
-		if (includeNewWord) {
+		if (newWordWeightMultiplier > 0) {
 			if (nextMatch == weights.Length - 1) {
 				nextMatch = -1;
 			}
@@ -161,19 +161,19 @@ public static class Scheduler {
 		return -1;
 	}
 	
-	public static WordPair GetNextWordPair(WordPack wordData, DataSaver.UserWordPackProgress progress, bool isLearningMeaningSide, List<int> banList, bool newWordAllowed) {
-		var nextMatch = GetReviewWord(progress, isLearningMeaningSide, true, banList);
+	public static WordPair GetNextWordPair(WordPack wordData, DataSaver.UserWordPackProgress progress, bool isLearningMeaningSide, List<int> banList,int newWordWeightMultiplier) {
+		var nextMatch = GetReviewWord(progress, isLearningMeaningSide, newWordWeightMultiplier, banList);
 		
-		if (nextMatch == -1 && newWordAllowed) { // If we get -1, it means we picked new word! so get a new word
+		if (nextMatch == -1 && newWordWeightMultiplier > 0) { // If we get -1, it means we picked new word! so get a new word
 			nextMatch = GetNewWord(wordData, progress, isLearningMeaningSide, banList);
 		}
 
 		if (nextMatch == -1) { // if it is still -1, it means we have run out of new words in this pack, so lets pick another word instead.
-			nextMatch = GetReviewWord(progress, isLearningMeaningSide, false, banList);
+			nextMatch = GetReviewWord(progress, isLearningMeaningSide, 0, banList);
 		}
 
 		if (nextMatch == -1) { // if it is still -1, it means all words are somehow banned. Get a new one without the bans instead
-			nextMatch = GetReviewWord(progress, isLearningMeaningSide, false, new List<int>());
+			nextMatch = GetReviewWord(progress, isLearningMeaningSide, 0, new List<int>());
 		}
 
 		return wordData.wordPairs[nextMatch];
